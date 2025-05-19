@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VIP NUMBERS</title>
-  
-  <!-- Import Poppins Bold font -->
+  <title>VIP Numbers</title>
+
+  <!-- Poppins Bold Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
-  
+
   <style>
     /* Reset */
     * {
@@ -19,29 +19,29 @@
     html, body {
       height: 100%;
       width: 100%;
-      font-family: Poppins, Arial, sans-serif;
+      font-family: Arial, sans-serif;
       overflow-x: hidden;
     }
 
-    /* Background image container */
+    /* Background image */
     .background {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      min-height: 100vh;
-      background: url('vip1.png') no-repeat center center;
+      height: 100%;
+      background: url('vip.jpeg') no-repeat center center;
       background-size: cover;
       z-index: 0;
     }
 
-    /* White semi-transparent overlay */
+    /* Overlay */
     .overlay {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       background-color: rgba(255, 255, 255, 0.7);
       z-index: 1;
     }
@@ -64,7 +64,7 @@
       }
     }
 
-    /* Main container */
+    /* Main content container */
     .container {
       position: relative;
       z-index: 4;
@@ -82,11 +82,11 @@
       max-width: 600px;
     }
 
-    /* Splash wrapper around heading */
+    /* Splash effect behind heading */
     .splash-wrapper {
       position: relative;
       display: inline-block;
-      padding: 15px 30px;
+      padding: 10px 30px;
       border-radius: 20px;
       z-index: 2;
     }
@@ -94,37 +94,36 @@
     .splash-wrapper::before {
       content: '';
       position: absolute;
-      top: 10%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 140%;
-      height: 120%;
-      background: radial-gradient(circle at center, rgba(37, 211, 102, 0.3), transparent 80%);
-      filter: blur(45px);
-      border-radius: 30px;
+      width: 160%;
+      height: 140%;
+      background: radial-gradient(circle at center, rgba(37, 211, 102, 0.3), transparent 70%);
+      filter: blur(25px);
+      border-radius: 40px;
       z-index: -1;
     }
 
-    /* Heading with Poppins Bold */
+    /* Heading */
     h1 {
       font-family: 'Poppins', Arial, sans-serif;
       font-weight: 700;
       font-size: 3em;
       color: #000;
-      margin-bottom: 420px;
+      margin-bottom: 20px;
     }
 
-    /* Paragraph */
+    /* Description */
     p {
       font-size: 1.2em;
       color: #000;
       background-color: rgba(255, 255, 255, 0.9);
       padding: 20px;
       border-radius: 10px;
-      font-family: Arial, sans-serif;
     }
 
-    /* Button wrapper below text */
+    /* WhatsApp button */
     .button-wrapper {
       position: relative;
       display: inline-block;
@@ -156,7 +155,7 @@
       pointer-events: none;
     }
 
-    /* Responsive styles */
+    /* Mobile responsive */
     @media (max-width: 768px) {
       h1 {
         font-size: 8vw;
@@ -183,11 +182,14 @@
 </head>
 <body>
 
+  <!-- Background and overlay -->
   <div class="background"></div>
   <div class="overlay"></div>
 
+  <!-- Logo -->
   <img src="logo.jpeg" alt="VIP Logo" class="logo" />
 
+  <!-- Content -->
   <div class="container">
     <div class="text-group">
       <div class="splash-wrapper">
